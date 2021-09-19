@@ -33,15 +33,48 @@
 		</section>
 
 		<script>
+			/* Quest 03-1 */
+			
+			function solve() {
+				let line = prompt('입력');
+				let result = '';
+
+				for(let i = 0; i < line; i++) {
+					for (let j = line - 1; j > i; j--) {
+						result += ' ';
+    				}
+    				for (let k = 0; k <= (i * 2); k++) {
+						result += '*';
+    					}
+   					 result += '\n';
+					}
+				console.log(result);
+			}
+			solve();
+
+			/* Quest 03-2 */
 			let row1Squares = document.querySelectorAll('.row1 .square');
+
 			for(let node of row1Squares) {
 				/* TODO: node 변수를 어떻게 조작해야 할까요? */
+				node.addEventListener('click', function (){
+					if(node.getAttribute('style', 'background-color') == 'background-color:yellow'){
+						node.setAttribute('style', 'background-color:white');
+					}
+					else {
+						node.setAttribute('style', 'background-color:yellow');
+					}
+				});
 			}
 
 			let row2Squares = document.querySelectorAll('.row2 .square');
 			for(let node of row2Squares) {
 				/* TODO: node 변수를 어떻게 조작해야 할까요? */
+				node.addEventListener('click', function() {
+					node.classList.toggle('enabled');
+				})
 			}
 		</script>
+
 	</body>
 </html>
