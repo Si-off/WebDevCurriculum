@@ -1,0 +1,179 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: #E9F1F7;
+}
+
+
+/* header */
+header {
+    margin-bottom: 70px;
+}
+/* top menu */
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 16px 0 16px;
+    margin: 0 0 42px 0;
+}
+
+.top-menu > div a {
+    margin: 0 8px;
+}
+
+/* */
+.header-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-main img {
+    position: relative;
+    top: 0;
+}
+
+/* search box */
+.search {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #01C75B;
+    border-radius: 3px;
+    background-color: #fff;
+    width: 700px;
+    height: 48px;
+    margin: 16px 0 0;
+    padding: 8px;
+}
+
+.search input {
+    width: 100%;
+    height: auto;
+    border: none;
+    background-color: none;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+/* shortcut */
+.shortcut {
+    width: 380px;
+    margin: 32px 0 0;
+}
+
+.shortcut ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.shortcut__item {
+    margin: 5px 10px;
+}
+
+.shortcut__item div{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 40%;
+    background-color: #F8FBFD;
+}
+
+.shortcut__item a {
+    display: block;
+    width: inherit;
+    height: inherit;
+}
+
+.shortcut__item img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25px;
+    height: 25px;
+    border: 1px solid #E5E7ED;
+    border-radius: 40%;
+    background-color: #FFFBFD;
+}
+
+.shortcut__item p {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+/* main */
+.outer {
+    width: 600px;
+    margin: 0 auto 16px auto;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 16px;
+}
+
+.container h2 {
+    font-size: 16px;
+    color: #373B40;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* pan */
+.pan {
+    background-color: #F5F7F9;
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 72px 0 0 0;
+}
+
+.footer-nav {
+    margin: 0 0 30px;
+}
+
+.footer-nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav ul:nth-child(n+2){
+    margin-top: 8px;
+}
+
+.footer-nav li:nth-child(n+2):before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    width: 1px;
+    height: 0.9em;
+    background-color: #B7BCC6;
+    margin: 0px 10px;
+}
