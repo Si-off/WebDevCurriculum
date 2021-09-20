@@ -1,20 +1,172 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko-KR">
 	<head>
 		<meta charset="UTF-8">
 		<!-- TODO: 또 무엇이 필요할까요? -->
+		<link rel="stylesheet" href="/Quest02/style.css">
+        <title>Naver</title>
 	</head>
 	<body>
 		<header>
 			<!-- TODO: 어디까지를 header로 보는 것이 좋을까요? -->
+			<div class="top-menu">
+				<img src="#" alt="hamburger">
+				<div>
+					<a href="#">QR 체크인</a>
+					<a href="#">
+						<img src="#" alt="Npay">
+					</a>
+				</div>
+			</div>
+
+			<div class="header-main">
+				<h1 class="logo">
+					<a href="https://www.naver.com/">
+						<img src="https://logoproject.naver.com/img/img_story_renewal.png" alt="Naver">
+					</a>
+				</h1>
+
+				<form class="search" action="#">
+					<input type="text" placeholder="검색어를 입력해주세요.">
+					<img src="#" alt="mic">
+					<img src="#" alt="cam">
+					<img src="#" alt="pos">
+				</form>
+
+				<nav class="shortcut">
+					<ul>
+						<li class="shortcut__item">
+							<div>
+								<a href="#">
+									<img src="#" alt="">
+								</a>
+							</div>
+							<p>뉴스판</p>
+						</li>
+						<li class="shortcut__item">
+							<div>
+								<a href="#">
+									<img src="#" alt="">
+								</a>
+							</div>
+							<p>경제지표판</p>
+						</li>
+						<li class="shortcut__item">
+							<div>
+								<a href="#">
+									<img src="#" alt="">
+								</a>
+							</div>
+							<p>연예판</p>
+						</li>
+						<li class="shortcut__item">
+							<div>
+								<a href="#">
+									<img src="#" alt="">
+								</a>
+							</div>
+							<p>트렌드판</p>
+						</li>
+						<li class="shortcut__item">
+							<div>
+								<a href="#">
+									<img src="#" alt="">
+								</a>
+							</div>
+							<p>메일</p>
+						</li>
+						<li class="shortcut__item">
+							<div>
+								<a href="#">
+									<img src="#" alt="">
+								</a>
+							</div>
+							<p>카페</p>
+						</li>
+						<li class="shortcut__item">
+							<div>
+								<a href="#">
+									<img src="#" alt="">
+								</a>
+							</div>
+							<p>블로그</p>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
 		</header>
 
 		<section class="main">
 			<!-- TODO: main은 어떤 식으로 나눌 수 있을까요? -->
+			<div class="outer">
+				<section class="container">
+					<header class="section-header">
+						<h2>웹툰</h2>
+						<div class="dropdown-menu">#</div>
+					</header>
+				</section>
+			</div>
+
+			<div class="outer">
+				<section class="container">
+					<header class="section-header">
+						<h2>인기 주제 판을 확인해 보세요!</h2>
+						<span class="pan__setting">판관리</span>
+					</header>
+					<ul class="pan-list">
+						<li class="pan">
+							<div class="pan__item">
+								<img src="#" alt="logo">
+								<span>영화판</span>
+								<div class="dropdown-menu">#</div>
+							</div>
+						</li>
+					</ul>
+				</section>
+			</div>
+
+			<div class="outer">
+				<section class="container">
+					<header class="section-header">
+						<h2>알립니다</h2>
+						<p>네이버앱 업데이트 사전 안내</p>
+						<div class="dropdown-menu">#</div>
+					</header>
+				</section>
+			</div>
+
 		</section>
 
 		<footer>
 			<!-- TODO: 하단의 여러 가지 링크들은 어떻게 처리하면 좋을까요? -->
+			<nav class="footer-nav">
+				<ul>
+					<li>
+						<a href="#">로그인</a>
+					</li>
+					<li>
+						<a href="#">전체서비스</a>
+					</li>
+					<li>
+						<a href="#">PC버전</a>
+					</li>
+				</ul>
+	
+				<ul>
+					<li>
+						<a href="#">이용약관</a>
+					</li>
+					<li>
+						<a href="#"><b>개인정보처리방침</b></a>
+					</li>
+					<li>
+						<a href="#">고객센터</a>
+					</li>
+				</ul>
+			</nav>
+
+            <img src="#" alt="naver-logo">
 		</footer>
 	</body>
 </html>
